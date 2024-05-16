@@ -1,4 +1,4 @@
-//root is the highest level in order to apply all styles
+/* root is the highest level in order to apply all styles */
 :root {
   --warm-sand: #F9F3E6;
   --silver: #C9C7C7;
@@ -7,5 +7,14 @@
   --sage: #8B8F74;
   --dark-sage: #3F4441;
   --dark-crayola: #30353F;
-}
 
+  --title-font:'Josefin Slab';
+  --body-font: 'KoHo';
+
+
+  --hero-size: 200px;
+  --large-font: 128px;
+  --medium-font: 64px;
+  --small-font: 32px;
+
+}
