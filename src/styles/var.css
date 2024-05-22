@@ -1,4 +1,4 @@
-//root is the highest level in order to apply all styles
+/* root is the highest level in order to apply all styles */
 :root {
   --warm-sand: #F9F3E6;
   --silver: #C9C7C7;
@@ -7,5 +7,16 @@
   --sage: #8B8F74;
   --dark-sage: #3F4441;
   --dark-crayola: #30353F;
-}
+  
+  --title-font:'Josefin Slab';
+  --body-font: 'KoHo';
 
+/*  desktop: 1280×720  mobile: 360×640 */
+/* vw value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. */
+
+  --font-size-hero: clamp(25px, 30vw, 200px);
+  --font-size-large: clamp(32px, 30vw, 128px);
+  --font-size-medium: clamp(16px, 30vw, 64px);
+  --font-size-small: clamp(8px, 30vw, 32px);
+
+}
