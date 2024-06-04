@@ -1,7 +1,8 @@
-<svelte:head>
-  <title>Home</title>
-  <!-- <meta name="description" content="Svelte demo app" /> -->
-</svelte:head>
+<script>
+  import Seo from "../lib/components/SEO.svelte"
+</script>
+
+<Seo />
 
 <h1>Laura Goldthwaite</h1>
 
