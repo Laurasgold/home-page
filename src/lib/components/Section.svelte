@@ -1,5 +1,6 @@
 <script>
   export let theme = "normal"
+  export let id
 
   const themeMap = {
     normal: {
@@ -20,7 +21,7 @@
   }
 </script>
 
-<section style="background: {themeMap[theme].background}; color: {themeMap[theme].text};">
+<section style="background: {themeMap[theme].background}; color: {themeMap[theme].text};" {id}>
   <!-- magic portal whatever you write in the Section tag is places in the portal tag -->
   <slot></slot>
 </section>
