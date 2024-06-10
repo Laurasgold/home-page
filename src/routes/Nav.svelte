@@ -19,7 +19,7 @@
     background: var(--warm-sand);
     border-top: 2px var(--dark-sage) solid;
     border-bottom: 2px var(--dark-sage) solid;
-    padding: 30px 1rem;
+    padding: 2rem 1rem;
     font-size: var(--font-size-small);
     font-family: var(--title-font);
   }
