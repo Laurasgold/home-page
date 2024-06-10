@@ -15,9 +15,9 @@
 /*  desktop: 1280×720  mobile: 360×640 */
 /* vw value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. */
 
-  --font-size-hero: clamp(25px, 30vw, 200px);
-  --font-size-large: clamp(32px, 30vw, 128px);
-  --font-size-medium: clamp(16px, 30vw, 64px);
-  --font-size-small: clamp(8px, 30vw, 32px);
+  --font-size-hero: clamp(25px, 20vw, 200px);
+  --font-size-large: clamp(32px, 1.75vw, 128px);
+  --font-size-medium: clamp(18px, 1.75vw, 64px);
+  --font-size-small: clamp(16px, 1.75vw, 32px);
 
 }
