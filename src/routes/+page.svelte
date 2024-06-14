@@ -1,4 +1,7 @@
 <script>
+  import Github from "$lib/assets/Github.svelte"
+  import Instagram from "$lib/assets/Instagram.svelte"
+  import Linkedin from "$lib/assets/Linkedin.svelte"
   import Seo from "../lib/components/SEO.svelte"
   import Section from "../lib/components/Section.svelte"
   import Nav from "./Nav.svelte"
@@ -10,7 +13,16 @@
 <Nav />
 
 <Section id="about">About me</Section>
-<Section theme="medium" id="social">Social Media</Section>
+<Section theme="medium" id="social">
+  <div class="social">
+    <h2>Follow my social media</h2>
+    <div class="socialLinks">
+      <Instagram />
+      <Linkedin />
+      <Github />
+    </div>
+  </div>
+</Section>
 <Section id="mission">Mission</Section>
 <Section theme="dark" id="portfolio">Portfolio</Section>
 <Section id="contactme">Contact me</Section>
@@ -19,5 +31,21 @@
   h1 {
     font-size: var(--font-size-hero);
     font-family: var(--title-font);
+  }
+  .social h2 {
+    font-size: var(--font-size-medium);
+    font-family: var(--title-font);
+    text-align: center;
+    padding-top: clamp(120px, 1.5vw, 330px);
+  }
+  /* need to work on padding top and bottom depending on when the other parts of the site ar added */
+  .socialLinks {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-top: 7%;
+    padding-bottom: clamp(120px, 1vw, 330px);
+    margin: 0 auto;
+    width: clamp(80px, 100%, 1028px);
   }
 </style>
