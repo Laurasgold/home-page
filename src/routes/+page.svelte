@@ -46,6 +46,6 @@
     padding-top: 7%;
     padding-bottom: clamp(120px, 1vw, 330px);
     margin: 0 auto;
-    width: clamp(80px, 100%, 1028px);
+    max-width: 1028px;
   }
 </style>
