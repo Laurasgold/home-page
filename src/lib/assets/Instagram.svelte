@@ -1,5 +1,5 @@
 <svg
-  fill="#30353F"
+  fill="var(--dark-crayola)"
   version="1.1"
   id="Layer_1"
   xmlns="http://www.w3.org/2000/svg"
