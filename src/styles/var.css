@@ -20,4 +20,5 @@
   --font-size-medium: clamp(2.62rem, 4.556522vi + 1.59rem, 5.24rem);
   --font-size-small:  clamp(1rem, 1.73913vi + 0.61rem, 2rem);
 
+  --card-radius: 1rem;
 }
