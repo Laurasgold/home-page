@@ -74,16 +74,17 @@
   .portfolio-card {
     background: var(--cadet);
     height: 600px;
-    max-width: 400px;
+    /* max-width: 400px; */
     border-radius: var(--card-radius);
   }
 
   .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 420px));
-    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+
     margin: 0 auto;
     padding: 3rem 0;
+    gap: 2rem;
   }
 
   .portfolio-title {
@@ -93,16 +94,17 @@
     padding-top: 3rem;
   }
 
-  @media screen and (max-width: 1306px) {
+  @media screen and (max-width: 800px) {
     .portfolio-container {
-      display: flex;
+      /* display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center; */
+      grid-template-columns: 1fr;
     }
     .portfolio-card {
-      height: clamp(14.063rem, 20.613vw + 9.425rem, 26.25rem);
-      width: clamp(18.75rem, 12.685vw + 15.896rem, 26.25rem);
-      margin: 2rem auto;
+      /* height: clamp(14.063rem, 20.613vw + 9.425rem, 26.25rem);
+      width: clamp(18.75rem, 12.685vw + 15.896rem, 26.25rem); */
+      max-width: none;
     }
   }
 </style>
