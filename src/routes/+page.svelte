@@ -81,7 +81,6 @@ About Me section
   }
   .about-title {
     color: var(--dark-crayola);
-    text-align: left;
   }
   .about-description {
     line-height: 1.75;
