@@ -17,8 +17,8 @@
 <Section id="about">
   <div class="about">
     <div class="about-img-wrapper">
-      <div class="image-wrapper">
-        <img src={aboutMeImg} alt="Laura" srcset="" class="about-photo" />
+      <div class="image-background">
+        <img src={aboutMeImg} alt="Laura" class="about-photo" />
       </div>
     </div>
     <div class="about-text">
@@ -57,8 +57,8 @@
       </p>
     </div>
     <div class="mission-img-wrapper">
-      <div class="image-wrapper">
-        <img src={missionImg} alt="bouquet of flowers" srcset="" class="mission-photo" />
+      <div class="image-background">
+        <img src={missionImg} alt="bouquet of flowers" class="mission-photo" />
       </div>
     </div>
   </div>
@@ -114,7 +114,7 @@ About Me & Mission section
     margin: auto;
   }
 
-  .image-wrapper {
+  .image-background {
     background-color: var(--silver);
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@ About Me & Mission section
       align-items: center; */
       grid-template-columns: repeat(2, 1fr);
     }
-    .image-wrapper {
+    .image-background {
       transform: translateY(88px);
       padding: 45px;
     }
