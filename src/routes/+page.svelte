@@ -5,6 +5,7 @@
   import Seo from "../lib/components/SEO.svelte"
   import Section from "../lib/components/Section.svelte"
   import Nav from "./Nav.svelte"
+  import aboutMeImg from "$lib/20230914_192008.jpg"
 </script>
 
 <Seo />
@@ -14,9 +15,9 @@
 
 <Section id="about">
   <div class="about">
-    <div style="margin:auto;">
+    <div class="about-wrapper">
       <div class="image-wrapper">
-        <img src="/src/lib/assets/images/20230914_192008.jpg" alt="Laura" srcset="" class="about-photo" />
+        <img src={aboutMeImg} alt="Laura" srcset="" class="about-photo" />
       </div>
     </div>
     <div class="about-text">
@@ -84,7 +85,9 @@ About Me section
   }
   .about-description {
     line-height: 1.75;
-    text-align: left;
+  }
+  .about-wrapper {
+    margin: auto;
   }
 
   .image-wrapper {
