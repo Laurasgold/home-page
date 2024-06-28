@@ -5,6 +5,7 @@
   import Seo from "../lib/components/SEO.svelte"
   import Section from "../lib/components/Section.svelte"
   import Nav from "./Nav.svelte"
+  import aboutMeImg from "$lib/20230914_192008.jpg"
 </script>
 
 <Seo />
@@ -12,7 +13,25 @@
 <h1>Laura Gold</h1>
 <Nav />
 
-<Section id="about">About me</Section>
+<Section id="about">
+  <div class="about">
+    <div class="about-wrapper">
+      <div class="image-wrapper">
+        <img src={aboutMeImg} alt="Laura" srcset="" class="about-photo" />
+      </div>
+    </div>
+    <div class="about-text">
+      <h2 class="about-title">About Me</h2>
+      <p class="about-description">
+        I'm a former nurse turned tech enthusiast with a passion for innovation and continuous learning. My diverse
+        background enables me to approach challenges with a unique perspective. I thrive in dynamic environments,
+        quickly adapting to new situations and technologies. In my free time, I enjoy traveling, which fuels my
+        curiosity and broadens my understanding of the world. I'm committed to leveraging my skills to make a positive
+        impact in the tech industry.
+      </p>
+    </div>
+  </div>
+</Section>
 <Section theme="medium" id="social">
   <div class="social">
     <h2>Follow my social media</h2>
@@ -48,7 +67,52 @@
     font-size: var(--font-size-hero);
     font-family: var(--title-font);
   }
+  h2 {
+    font-size: var(--font-size-medium);
+  }
 
+  /************************************* 
+About Me section 
+**************************************/
+  .about {
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem;
+  }
+  .about-title {
+    color: var(--dark-crayola);
+  }
+  .about-description {
+    line-height: 1.75;
+  }
+  .about-wrapper {
+    margin: auto;
+  }
+
+  .image-wrapper {
+    background-color: var(--silver);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 950px) {
+    .about {
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .image-wrapper {
+      transform: translateY(88px);
+      padding: 45px;
+    }
+  }
+  /************************************* 
+Social Media section 
+**************************************/
   .social h2 {
     font-size: var(--font-size-medium);
     font-family: var(--title-font);
@@ -71,6 +135,10 @@
     width: var(--font-size-medium);
   }
 
+  /************************************* 
+Portfolio section 
+**************************************/
+
   .portfolio-card {
     background: var(--cadet);
     height: 600px;
@@ -90,7 +158,6 @@
   .portfolio-title {
     display: flex;
     justify-content: center;
-    font-size: var(--font-size-large);
     padding-top: 3rem;
   }
 
