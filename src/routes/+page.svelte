@@ -157,7 +157,6 @@ Portfolio section
   .portfolio-title {
     display: flex;
     justify-content: center;
-    /* font-size: var(--font-size-large); */
     padding-top: 3rem;
   }
 
