@@ -88,7 +88,6 @@ About Me section
   }
 
   .image-wrapper {
-    /* border: 51px solid var(--silver); */
     background-color: var(--silver);
     display: flex;
     justify-content: center;
