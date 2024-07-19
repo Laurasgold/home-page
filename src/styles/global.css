@@ -13,3 +13,18 @@ h6 {
   font-weight: 400;
   font-family: var(--title-font);
 }
+
+
+input, 
+textarea {
+  background-color: var(--silver);
+  border-radius: 0;
+  border: none;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.submit-button {
+  border: 2px solid var(--crayola);
+  padding: 1.2rem;
+}
