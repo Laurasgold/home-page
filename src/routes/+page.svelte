@@ -10,8 +10,9 @@
 </script>
 
 <Seo />
-
-<h1>Laura Gold</h1>
+<div class="hero wrapper">
+  <h1 class="hero">Laura Goldthwaite</h1>
+</div>
 <Nav />
 
 <Section id="about">
@@ -90,7 +91,24 @@
   h2 {
     font-size: var(--font-size-medium);
   }
+  /************************************* 
+Hero
+**************************************/
+  .wrapper {
+    background-image: url(src/lib/assets/images/hero.png);
+    /* background: pink; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 959px;
+    width: 100%;
+  }
 
+  .hero {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.5);
+  }
   /************************************* 
 About Me & Mission section 
 **************************************/
