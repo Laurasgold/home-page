@@ -20,7 +20,7 @@
 <Nav />
 
 <Section id="about">
-  <section class="about">
+  <div class="about">
     <div class="about-img-wrapper">
       <div class="image-wrapper">
         <img src={aboutMeImg} alt="Laura" srcset="" class="about-photo" />
@@ -36,21 +36,21 @@
         impact in the tech industry.
       </p>
     </div>
-  </section>
+  </div>
 </Section>
 <Section theme="medium" id="social">
-  <section class="social">
+  <div class="social">
     <h3>Follow my social media</h3>
     <div class="social-links">
       <Instagram />
       <Linkedin />
       <Github />
     </div>
-  </section>
+  </div>
 </Section>
 
 <Section id="mission">
-  <section class="mission">
+  <div class="mission">
     <div class="mission-text">
       <h2 class="mission-title">Mission</h2>
       <p class="mission-description">
@@ -67,11 +67,11 @@
         <img src={missionImg} alt="bouquet of flowers" srcset="" class="mission-photo" />
       </div>
     </div>
-  </section>
+  </div>
 </Section>
 
 <Section theme="dark" id="portfolio">
-  <section class="portfolio">
+  <div class="portfolio">
     <h2 class="portfolio-title">Portfolio</h2>
     <div class="portfolio-container">
       <div class="portfolio-card">
@@ -86,11 +86,11 @@
         <p>blah blah</p>
       </div>
     </div>
-  </section>
+  </div>
 </Section>
 
 <Section id="contact-me">
-  <section class="contact-me">
+  <div class="contact-me">
     <h2 class="contact-me-title">Contact Me</h2>
     <p class="contact-me-description">I would love to hear from you.</p>
     <div class="contact-me-container">
@@ -113,7 +113,7 @@
         </form>
       </div>
     </div>
-  </section>
+  </div>
 </Section>
 
 <style>
