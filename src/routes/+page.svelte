@@ -97,8 +97,9 @@ Hero
   .wrapper {
     background-image: url(src/lib/assets/images/hero.png);
     /* background: pink; */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
     height: 959px;
     width: 100%;
   }
@@ -109,6 +110,14 @@ Hero
     text-align: center;
     background-color: rgba(217, 217, 217, 0.5);
   }
+
+  @media screen and (max-width: 430px) {
+    .wrapper {
+      height: 325px;
+      width: 100%;
+    }
+  }
+
   /************************************* 
 About Me & Mission section 
 **************************************/
