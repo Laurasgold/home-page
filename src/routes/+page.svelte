@@ -42,15 +42,16 @@
 </script>
 
 <Seo />
-
-<h1>Laura Gold</h1>
+<div class="hero wrapper">
+  <h1 class="hero">Laura Goldthwaite</h1>
+</div>
 <Nav />
 
 <Section id="about">
   <div class="about">
     <div class="about-img-wrapper">
-      <div class="image-wrapper">
-        <img src={aboutMeImg} alt="Laura" srcset="" class="about-photo" />
+      <div class="image-background">
+        <img src={aboutMeImg} alt="Laura" class="about-photo" />
       </div>
     </div>
     <div class="about-text">
@@ -90,8 +91,8 @@
       </p>
     </div>
     <div class="mission-img-wrapper">
-      <div class="image-wrapper">
-        <img src={missionImg} alt="bouquet of flowers" srcset="" class="mission-photo" />
+      <div class="image-background">
+        <img src={missionImg} alt="bouquet of flowers" class="mission-photo" />
       </div>
     </div>
   </div>
@@ -157,6 +158,32 @@
   h3 {
     font-size: var(--font-size-medium);
   }
+  /************************************* 
+Hero
+**************************************/
+  .wrapper {
+    background-image: url(src/lib/assets/images/hero.png);
+    /* background: pink; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 959px;
+    width: 100%;
+  }
+
+  .hero {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.5);
+  }
+
+  @media screen and (max-width: 430px) {
+    .wrapper {
+      height: 325px;
+      width: 100%;
+    }
+  }
 
   /************************************* 
 About Me & Mission section 
@@ -181,7 +208,7 @@ About Me & Mission section
     margin: auto;
   }
 
-  .image-wrapper {
+  .image-background {
     background-color: var(--silver);
     display: flex;
     justify-content: center;
@@ -197,7 +224,7 @@ About Me & Mission section
       align-items: center; */
       grid-template-columns: repeat(2, 1fr);
     }
-    .image-wrapper {
+    .image-background {
       transform: translateY(88px);
       padding: 45px;
     }
