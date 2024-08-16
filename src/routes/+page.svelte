@@ -8,9 +8,36 @@
   import aboutMeImg from "$lib/assets/images/laura.jpg"
   import missionImg from "$lib/assets/images/flower.jpg"
 
-  function onSubmit(e) {
-    e.preventDefault()
-    alert("Submitted")
+  let form
+  let status = ""
+
+  function onSubmit(event) {
+    event.preventDefault()
+    const data = new FormData(event.target)
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          status = "Thanks for your submission!"
+          form.reset()
+        } else {
+          response.json().then((data) => {
+            if (Object.hasOwn(data, "errors")) {
+              status = data["errors"].map((error) => error["message"]).join(", ")
+            } else {
+              status = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      })
+      .catch((error) => {
+        status = "Oops! There was a problem submitting your form"
+      })
   }
 </script>
 
@@ -96,7 +123,7 @@
     <div class="contact-me-container">
       <div class="contact-me-card">
         <h3>Send a message</h3>
-        <form on:submit={onSubmit} action="https://formspree.io/f/xvgpgedp" method="POST">
+        <form on:submit={onSubmit} action="https://formspree.io/f/xvgpgedp" method="POST" bind:this={form}>
           <label for="">
             <span> Name: </span>
             <input name="name" />
@@ -111,6 +138,9 @@
           </label>
           <button type="submit" class="submit-button">Submit Message</button>
         </form>
+        {#if status}
+          <p>{status}</p>
+        {/if}
       </div>
     </div>
   </div>
