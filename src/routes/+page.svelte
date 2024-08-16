@@ -7,6 +7,7 @@
   import Nav from "./Nav.svelte"
   import aboutMeImg from "$lib/assets/images/laura.jpg"
   import missionImg from "$lib/assets/images/flower.jpg"
+  import Footer from "./Footer.svelte"
 
   let form
   let status = ""
@@ -146,6 +147,7 @@
     </div>
   </div>
 </Section>
+<Footer />
 
 <style>
   h1 {
@@ -351,7 +353,7 @@ Contact Me section
   .contact-me-description {
     display: flex;
     justify-content: center;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
 
   .contact-me-card {
@@ -362,10 +364,11 @@ Contact Me section
     gap: 3rem;
     background: var(--cadet);
     border-radius: var(--card-radius);
-    padding: 85px 132px;
+    padding: 85px 100px;
     margin: 0 auto;
     max-width: 75vw;
     width: 100%;
+    transform: translateY(88px);
   }
   .contact-me-container {
     display: flex;
