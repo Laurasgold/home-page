@@ -15,10 +15,12 @@
 /*  desktop: 1280×720  mobile: 360×640 */
 /* vw value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. */
 
-  --font-size-hero: clamp(6.85rem, 11.930435vi + 4.17rem, 13.71rem);
+  --font-size-hero: clamp(4rem, -2.0714rem + 25.9048vw, 12.5rem);
   --font-size-large: clamp(4.24rem, 7.356522vi + 2.58rem, 8.47rem);
   --font-size-medium: clamp(2.62rem, 4.556522vi + 1.59rem, 5.24rem);
   --font-size-small:  clamp(1rem, 1.73913vi + 0.61rem, 2rem);
+
+  /* clamp(4rem, -2.0714rem + 25.9048vw, 12.5rem) */
 
   --card-radius: 1rem;
 }
