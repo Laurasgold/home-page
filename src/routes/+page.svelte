@@ -7,6 +7,38 @@
   import Nav from "./Nav.svelte"
   import aboutMeImg from "$lib/assets/images/laura.jpg"
   import missionImg from "$lib/assets/images/flower.jpg"
+
+  let form
+  let status = ""
+
+  function onSubmit(event) {
+    event.preventDefault()
+    const data = new FormData(event.target)
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          status = "Thanks for your submission!"
+          form.reset()
+        } else {
+          response.json().then((data) => {
+            if (Object.hasOwn(data, "errors")) {
+              status = data["errors"].map((error) => error["message"]).join(", ")
+            } else {
+              status = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      })
+      .catch((error) => {
+        status = "Oops! There was a problem submitting your form"
+      })
+  }
 </script>
 
 <Seo />
@@ -36,7 +68,7 @@
 </Section>
 <Section theme="medium" id="social">
   <div class="social">
-    <h2>Follow my social media</h2>
+    <h3>Follow my social media</h3>
     <div class="social-links">
       <Instagram />
       <Linkedin />
@@ -44,6 +76,7 @@
     </div>
   </div>
 </Section>
+
 <Section id="mission">
   <div class="mission">
     <div class="mission-text">
@@ -66,22 +99,53 @@
 </Section>
 
 <Section theme="dark" id="portfolio">
-  <h2 class="portfolio-title">Portfolio</h2>
-  <div class="portfolio-container">
-    <div class="portfolio-card">
-      <p>blah blah</p>
-    </div>
+  <div class="portfolio">
+    <h2 class="portfolio-title">Portfolio</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-card">
+        <p>blah blah</p>
+      </div>
 
-    <div class="portfolio-card">
-      <p>blah blah</p>
-    </div>
+      <div class="portfolio-card">
+        <p>blah blah</p>
+      </div>
 
-    <div class="portfolio-card">
-      <p>blah blah</p>
+      <div class="portfolio-card">
+        <p>blah blah</p>
+      </div>
     </div>
   </div>
 </Section>
-<Section id="contact-me">Contact me</Section>
+
+<Section id="contact-me">
+  <div class="contact-me">
+    <h2 class="contact-me-title">Contact Me</h2>
+    <p class="contact-me-description">I would love to hear from you.</p>
+    <div class="contact-me-container">
+      <div class="contact-me-card">
+        <h3>Send a message</h3>
+        <form on:submit={onSubmit} action="https://formspree.io/f/xvgpgedp" method="POST" bind:this={form}>
+          <label for="">
+            <span> Name: </span>
+            <input name="name" />
+          </label>
+          <label for="">
+            <span> Email: </span>
+            <input type="email" name="email" />
+          </label>
+          <label for="">
+            <span> Message: </span>
+            <textarea rows="5" name="message" />
+          </label>
+          <button type="submit" class="submit-button">Submit Message</button>
+        </form>
+        {#if status}
+          <p>{status}</p>
+        {/if}
+      </div>
+    </div>
+  </div>
+</Section>
 
 <style>
   h1 {
@@ -89,6 +153,9 @@
     font-family: var(--title-font);
   }
   h2 {
+    font-size: var(--font-size-large);
+  }
+  h3 {
     font-size: var(--font-size-medium);
   }
   /************************************* 
@@ -166,7 +233,7 @@ About Me & Mission section
   /************************************* 
 Social Media section 
 **************************************/
-  .social h2 {
+  .social h3 {
     font-size: var(--font-size-medium);
     font-family: var(--title-font);
     text-align: center;
@@ -265,6 +332,72 @@ Portfolio section
       /* height: clamp(14.063rem, 20.613vw + 9.425rem, 26.25rem);
       width: clamp(18.75rem, 12.685vw + 15.896rem, 26.25rem); */
       max-width: none;
+    }
+  }
+  /************************************* 
+Contact Me section 
+**************************************/
+  .contact-me h3 {
+    color: var(--dark-crayola);
+    margin-right: 5rem;
+  }
+
+  .contact-me-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+  }
+
+  .contact-me-description {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+  }
+
+  .contact-me-card {
+    display: flex;
+    /* makes it so that there is a column down with 1 item */
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    gap: 3rem;
+    background: var(--cadet);
+    border-radius: var(--card-radius);
+    padding: 85px 132px;
+    margin: 0 auto;
+    max-width: 75vw;
+    width: 100%;
+  }
+  .contact-me-container {
+    display: flex;
+    justify-content: center;
+  }
+  label {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  form {
+    display: grid;
+    /* makes it so that there is a column down with 1 item */
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    justify-items: flex-end;
+  }
+
+  @media screen and (max-width: 820px) {
+    .contact-me-card {
+      padding: 8px;
+      max-width: 100vw;
+    }
+    .contact-me h3 {
+      text-align: center;
+      margin-right: 0;
+    }
+    .submit-button {
+      display: flex;
+      justify-content: center;
     }
   }
 </style>
