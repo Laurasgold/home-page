@@ -1,4 +1,4 @@
-<div>
+<footer>
   <span>Laura Goldthwaite</span>
   <nav>
     <a href="#about">About Me</a>
@@ -8,7 +8,7 @@
     <a href="#contactme">Contact Me</a>
     <span>2024</span>
   </nav>
-</div>
+</footer>
 
 <style>
   nav {
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: flex-start;
   }
-  div {
+  footer {
     background: var(--dark-sage);
     padding: 2rem 1rem;
     font-size: var(--font-size-small);
