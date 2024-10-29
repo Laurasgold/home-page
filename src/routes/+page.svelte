@@ -346,12 +346,14 @@ Contact Me section
     display: flex;
     justify-content: center;
     padding-top: 140px;
+    color: var(--dark-crayola);
   }
 
   .contact-me-description {
     display: flex;
     justify-content: center;
     padding-bottom: 120px;
+    color: var(--blue-sand);
   }
 
   .contact-me-card {
