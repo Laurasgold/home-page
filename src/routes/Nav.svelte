@@ -11,10 +11,18 @@
 <style>
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1028px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+    }
   }
+
   div {
     background: var(--warm-sand);
     border-top: 2px var(--dark-sage) solid;
