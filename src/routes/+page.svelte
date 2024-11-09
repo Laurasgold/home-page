@@ -172,8 +172,8 @@ Hero
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 959px;
     width: 100%;
+    height: 80dvh;
   }
 
   .hero {
@@ -184,10 +184,10 @@ Hero
     padding-top: 30px;
   }
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 450px) {
     .wrapper {
-      height: 325px;
       width: 100%;
+      height: 80dvh;
     }
   }
 
