@@ -440,11 +440,12 @@ Contact Me section
       display: flex;
       justify-content: center;
     }
-    .contact-me-title {
-      padding-top: 5rem;
-    }
+    .contact-me-title,
     .contact-me-description {
-      padding-bottom: 1.25rem;
+      transform: translateY(7rem);
+    }
+    .contact-me-title {
+      padding-top: 1.5rem;
     }
   }
 </style>
