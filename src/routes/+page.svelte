@@ -329,7 +329,7 @@ Portfolio section
     grid-template-columns: repeat(3, 1fr);
 
     margin: 0 auto;
-    padding: 5rem 5rem;
+    padding: 5rem;
     gap: 3rem;
   }
 
@@ -339,12 +339,27 @@ Portfolio section
     padding-top: 7rem;
   }
 
+  @media screen and (max-width: 1200px) {
+    .portfolio-container {
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-card {
+      /* height: clamp(14.063rem, 20.613vw + 9.425rem, 26.25rem);
+      width: clamp(18.75rem, 12.685vw + 15.896rem, 26.25rem); */
+      max-width: none;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     .portfolio-container {
       /* display: flex;
       flex-direction: column;
       align-items: center; */
       grid-template-columns: 1fr;
+      padding: 2rem;
     }
     .portfolio-card {
       /* height: clamp(14.063rem, 20.613vw + 9.425rem, 26.25rem);
