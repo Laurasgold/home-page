@@ -220,9 +220,24 @@ About Me & Mission section
       align-items: center; */
       grid-template-columns: repeat(2, 1fr);
     }
+    .about-title,
+    .mission-title {
+      padding-top: 8rem;
+    }
+
     .image-background {
       transform: translateY(88px);
       padding: 45px;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .about,
+    .mission-img-wrapper {
+      padding-bottom: 3rem;
+    }
+    .mission-title,
+    .about-img-wrapper {
+      padding-top: 3rem;
     }
   }
 
