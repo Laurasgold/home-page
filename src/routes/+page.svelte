@@ -424,16 +424,24 @@ Contact Me section
 
   @media screen and (max-width: 820px) {
     .contact-me-card {
-      padding: 8px;
+      padding: 1.25rem;
       max-width: 100vw;
     }
+
     .contact-me h3 {
       text-align: center;
       margin-right: 0;
+      padding-top: 2rem;
     }
     .submit-button {
       display: flex;
       justify-content: center;
+    }
+    .contact-me-title {
+      padding-top: 5rem;
+    }
+    .contact-me-description {
+      padding-bottom: 1.5rem;
     }
   }
 </style>
