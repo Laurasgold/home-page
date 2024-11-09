@@ -157,8 +157,7 @@
 Hero
 **************************************/
   .wrapper {
-    background-image: url(src/lib/assets/images/hero.png);
-    /* background: pink; */
+    background-image: url("/src/lib/assets/images/hero.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
