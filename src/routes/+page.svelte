@@ -70,9 +70,12 @@
   <div class="social">
     <h3>Follow my social media</h3>
     <div class="social-links">
-      <a href="https://www.instagram.com/laura.latest.study/"><Instagram /></a>
-      <a href="https://www.linkedin.com/in/laura-goldthwaite-2129592b2/"><Linkedin /></a>
-      <a href="https://github.com/Laurasgold"><Github /></a>
+      <a href="https://www.instagram.com/laura.latest.study/" target="_blank" rel="noopener noreferrer"><Instagram /></a
+      >
+      <a href="https://www.linkedin.com/in/laura-goldthwaite-2129592b2/" target="_blank" rel="noopener noreferrer"
+        ><Linkedin /></a
+      >
+      <a href="https://github.com/Laurasgold" target="_blank" rel="noopener noreferrer"><Github /></a>
     </div>
   </div>
 </Section>
