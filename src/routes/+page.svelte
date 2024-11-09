@@ -178,6 +178,7 @@ Hero
     align-content: center;
     text-align: center;
     background-color: rgba(217, 217, 217, 0.5);
+    padding-top: 30px;
   }
 
   @media screen and (max-width: 430px) {
@@ -348,12 +349,14 @@ Contact Me section
     display: flex;
     justify-content: center;
     padding-top: 140px;
+    color: var(--dark-crayola);
   }
 
   .contact-me-description {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
+    color: var(--blue-sand);
   }
 
   .contact-me-card {
