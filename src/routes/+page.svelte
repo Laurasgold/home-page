@@ -106,15 +106,15 @@
     <h2 class="portfolio-title">Portfolio</h2>
     <div class="portfolio-container">
       <div class="portfolio-card">
-        <p>blah blah</p>
+        <p>Project 1</p>
       </div>
 
       <div class="portfolio-card">
-        <p>blah blah</p>
+        <p>Project 2</p>
       </div>
 
       <div class="portfolio-card">
-        <p>blah blah</p>
+        <p>Project 3</p>
       </div>
     </div>
   </div>
@@ -310,13 +310,20 @@ Portfolio section
     border-radius: var(--card-radius);
   }
 
+  .portfolio-card p {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-xsmall);
+    padding: 0.75rem 0rem;
+  }
+
   .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     margin: 0 auto;
-    padding: 3rem 0;
-    gap: 2rem;
+    padding: 5rem 5rem;
+    gap: 3rem;
   }
 
   .portfolio-title {
