@@ -107,15 +107,15 @@
     <h2 class="portfolio-title">Portfolio</h2>
     <div class="portfolio-container">
       <div class="portfolio-card">
-        <p>Project 1</p>
+        <p>Coming soon...</p>
       </div>
 
       <div class="portfolio-card">
-        <p>Project 2</p>
+        <p>Coming soon...</p>
       </div>
 
       <div class="portfolio-card">
-        <p>Project 3</p>
+        <p>Coming soon...</p>
       </div>
     </div>
   </div>
@@ -361,6 +361,9 @@ Portfolio section
       grid-template-columns: 1fr;
       padding: 2rem;
     }
+    .portfolio-title {
+      padding-bottom: 2rem;
+    }
     .portfolio-card {
       /* height: clamp(14.063rem, 20.613vw + 9.425rem, 26.25rem);
       width: clamp(18.75rem, 12.685vw + 15.896rem, 26.25rem); */
@@ -424,16 +427,25 @@ Contact Me section
 
   @media screen and (max-width: 820px) {
     .contact-me-card {
-      padding: 8px;
+      padding: 1.25rem;
       max-width: 100vw;
     }
+
     .contact-me h3 {
       text-align: center;
       margin-right: 0;
+      padding-top: 2rem;
     }
     .submit-button {
       display: flex;
       justify-content: center;
+    }
+    .contact-me-title,
+    .contact-me-description {
+      transform: translateY(7rem);
+    }
+    .contact-me-title {
+      padding-top: 1.5rem;
     }
   }
 </style>
