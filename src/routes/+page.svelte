@@ -153,16 +153,6 @@
 <Footer />
 
 <style>
-  h1 {
-    font-size: var(--font-size-hero);
-    font-family: var(--title-font);
-  }
-  h2 {
-    font-size: var(--font-size-large);
-  }
-  h3 {
-    font-size: var(--font-size-medium);
-  }
   /************************************* 
 Hero
 **************************************/
