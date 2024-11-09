@@ -70,9 +70,12 @@
   <div class="social">
     <h3>Follow my social media</h3>
     <div class="social-links">
-      <Instagram />
-      <Linkedin />
-      <Github />
+      <a href="https://www.instagram.com/laura.latest.study/" target="_blank" rel="noopener noreferrer"><Instagram /></a
+      >
+      <a href="https://www.linkedin.com/in/laura-goldthwaite-2129592b2/" target="_blank" rel="noopener noreferrer"
+        ><Linkedin /></a
+      >
+      <a href="https://github.com/Laurasgold" target="_blank" rel="noopener noreferrer"><Github /></a>
     </div>
   </div>
 </Section>
@@ -245,7 +248,7 @@ Social Media section
     display: flex;
     justify-content: space-around;
     gap: 2rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: clamp(120px, 1vw, 330px);
     margin: 0 auto;
     max-width: 1028px;
