@@ -11,6 +11,10 @@
 </footer>
 
 <style>
+  h3 {
+    padding: 1.5rem 0;
+  }
+
   nav {
     text-align: right;
     gap: 1rem;
@@ -36,5 +40,14 @@
     font-family: var(--title-font);
     color: var(--silver);
     padding-top: 150px;
+  }
+
+  @media screen and (max-width: 820px) {
+    h3 {
+      font-size: var(--font-size-small);
+    }
+    footer {
+      font-size: 1rem;
+    }
   }
 </style>
