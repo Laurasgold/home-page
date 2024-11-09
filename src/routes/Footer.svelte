@@ -1,5 +1,5 @@
 <footer>
-  <h2 class="flex-start">Laura Goldthwaite</h2>
+  <h3 class="flex-start">Laura Goldthwaite</h3>
   <nav>
     <a href="#about">About Me</a>
     <a href="#social">Social</a>
