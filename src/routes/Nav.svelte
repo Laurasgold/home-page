@@ -4,7 +4,7 @@
     <a href="#social">Social</a>
     <a href="#mission"> My Mission</a>
     <a href="#portfolio">Portfolio</a>
-    <a href="#contactme">Contact Me</a>
+    <a href="#contact-me">Contact Me</a>
   </nav>
 </div>
 

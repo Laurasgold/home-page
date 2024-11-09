@@ -121,7 +121,7 @@
   </div>
 </Section>
 
-<Section id="contactme">
+<Section id="contact-me">
   <div class="contact-me">
     <h2 class="contact-me-title">Contact Me</h2>
     <p class="contact-me-description">I would love to hear from you.</p>
