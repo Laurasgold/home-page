@@ -176,6 +176,7 @@ Hero
     align-content: center;
     text-align: center;
     background-color: rgba(217, 217, 217, 0.5);
+    padding-top: 30px;
   }
 
   @media screen and (max-width: 430px) {
