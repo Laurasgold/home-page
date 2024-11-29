@@ -3,7 +3,7 @@
 My Awesome Project
 My portfolio was designed and built completely from scratch, giving information about myself and my work, andthe ability to contact me.
 
-Link to project: http://recruiters-love-seeing-live-demos.com/
+Link to project: https://laura-g.me/
 
 alt tag
 
