@@ -5,7 +5,6 @@ My portfolio was designed and built completely from scratch, giving information 
 
 Link to project: https://laura-g.me/
 
-alt tag
 
 How It's Made:
 Tech used: HTML, CSS, JavaScript, Svelte.kit
